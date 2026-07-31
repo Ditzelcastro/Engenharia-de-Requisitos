@@ -1,0 +1,36 @@
+Situações
+
+O checkout simples do e-commerce
+
+Esse é um baita exemplo de como uma frase curta pode esconder um monte de decisão. "Checkout simples" pra um cliente pode ser aquele botão de comprar em 1 clique tipo Amazon, onde já tá tudo salvo (cartão, endereço) e a pessoa só confirma. Mas pra outro cliente, "simples" pode significar só um formulário curto, sem muita enrolação, mas ainda pedindo os dados na hora da compra.
+
+O problema é que o time não pode adivinhar. Se sair construindo por conta própria, corre o risco de gastar semanas fazendo uma coisa que não é nada do que o cliente tinha na cabeça. Por isso que existe a etapa de levantamento de requisitos: antes de programar, alguém tem que sentar com o cliente e perguntar coisas tipo "o usuário vai precisar criar conta antes?", "vai ter opção de pagar com Pix, boleto, cartão?", "o comprador vai poder comprar sem cadastro?". Só depois dessas respostas dá pra saber que tipo de "simples" é esse.
+
+A casa sem planta
+
+Essa analogia faz todo sentido. Se um pedreiro começar a erguer uma casa sem projeto, vários problemas surgem: parede no lugar errado, cano passando onde não devia, cômodo pequeno demais, ou faltando espaço pra alguma coisa que só foi lembrada depois que a parede já tava pronta. Aí, pra corrigir, tem que quebrar o que já foi feito, o que gera atraso e gasto extra.
+
+Com software é a mesma lógica. Sem levantar os requisitos antes, o time pode desenvolver uma tela que não atende o que o usuário precisa, esquecer uma funcionalidade importante, ou criar algo que depois não "encaixa" com o resto do sistema. E aí, assim como na casa, corrigir depois de pronto dá muito mais trabalho do que se tivesse sido pensado desde o início.
+
+Reflita
+
+Um app que não fez o que eu esperava
+
+Já usei vários apps assim, mas um que lembro bem foi um aplicativo de lista de compras que eu baixei esperando poder dividir a lista com outra pessoa em tempo real, tipo um Google Docs de supermercado. Só que na hora de usar, descobri que cada um tinha a própria lista separada, sem sincronização nenhuma. Bem frustrante.
+
+Acho que o que deu errado foi bem o que a atividade tá cobrando: quem desenvolveu o app provavelmente não perguntou direito pros usuários o que eles esperavam de uma "lista compartilhada". Fizeram uma lista, e só. A palavra "compartilhada" pode significar coisas bem diferentes (compartilhar por link, sincronizar em tempo real, dividir por categorias entre pessoas...) e parece que ninguém validou isso antes de programar.
+
+Por que corrigir requisito no início é mais barato
+
+Porque no início o erro está só no papel, numa conversa, num rascunho. Mudar uma ideia ou um documento custa quase nada, é só reescrever. Mas se o erro só é percebido perto da entrega, isso significa que o time já escreveu código em cima daquela ideia errada, já testou, talvez já integrou com outras partes do sistema. Corrigir nesse ponto exige reescrever código, testar de novo, e às vezes até mexer em coisas que dependiam daquela parte errada. Fora que pode atrasar a entrega toda. Ou seja, quanto mais "em cima" do erro o projeto já está construído, mais caro fica desmontar e ajustar.
+
+Exercício – Requisitos do dia-a-dia
+
+Escolhi a situação de planejar uma viagem. Aqui vão os 3 requisitos:
+
+O sistema (ou plano) precisa reservar as passagens de ida e volta.
+→ Requisito funcional, porque é uma ação que precisa acontecer, uma tarefa concreta que faz parte do processo.
+A reserva do hotel precisa ser feita com no mínimo 4 estrelas de avaliação.
+→ Requisito não funcional, porque não é uma ação em si, é uma restrição/qualidade de como a escolha deve ser feita.
+O valor total da viagem não pode ultrapassar o orçamento de R$ 3.000.
+→ Requisito não funcional, porque também é uma restrição — define um limite dentro do qual tudo o resto (passagem, hospedagem, passeios) precisa se encaixar.
